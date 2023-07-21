@@ -1,0 +1,73 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Background image for the whole page */
+  .background-image {
+    background-image: url("b1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Card container */
+  .card-container {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Add transparency to the background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    max-width: 400px; /* Limit card width for better responsiveness on larger screens */
+  }
+  
+  /* Your image */
+  .your-image {
+    width: 100%; /* Make the image responsive */
+    border-radius: 50%; /* Make the image circular */
+    max-width: 200px; /* Limit the maximum size of the image */
+    margin: 20px auto; /* Center the image with some margin */
+  }
+  
+  /* Girlfriend's image */
+  .gf-image {
+    width: 100%; /* Make the image responsive */
+    max-width: 200px; /* Limit the maximum size of the image */
+    margin: 20px auto; /* Center the image with some margin */
+  }
+  
+  /* Adjust font size for better readability */
+  h1 {
+    font-size: 24px;
+  }
+  
+  p {
+    font-size: 16px;
+  }
+  
+  /* Make the site more responsive for phones */
+  @media (max-width: 768px) {
+    .card-container {
+      padding: 10px; /* Adjust padding for small screens */
+      max-width: 90%; /* Increase card width to fit smaller screens */
+    }
+  
+    /* Adjust font size for small screens */
+    h1 {
+      font-size: 20px;
+    }
+  
+    p {
+      font-size: 14px;
+    }
+  }
+  
